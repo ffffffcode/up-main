@@ -18,7 +18,10 @@
     <div class="row">
         <div class="col-md-12">
             <h1>^-^作业共享Up</h1>
-            <hr>
+            <ol class="breadcrumb">
+                <li class="active">Up</li>
+                <li><a href="${requestContext.request.context}/list">文件列表</a></li>
+            </ol>
         </div>
     </div>
     <div class="row">
@@ -40,7 +43,7 @@
                 <div class="col-md-3 col-md-offset-2">
                     <button type="submit" class="btn btn-default">Up<span class="glyphicon glyphicon-chevron-up"></span>
                     </button>
-                        <a href="${pageContext.request.contextPath}/list" class="btn btn-default">查看文件
+                    <a href="${pageContext.request.contextPath}/list" class="btn btn-default">查看文件
                         <span class="glyphicon glyphicon-folder-open"></span>
                     </a>
                 </div>
