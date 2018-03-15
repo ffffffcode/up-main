@@ -1,7 +1,11 @@
 package ex.aaronfae.service;
 
-import ex.aaronfae.entity.Homework;
+import java.util.List;
+import java.util.Map;
 
 public interface UploadService {
-    Homework getHomeWork(String uper, String filename);
+
+    void up(String uper, String fileName);
+
+    List<Map<String, Object>> list();
 }

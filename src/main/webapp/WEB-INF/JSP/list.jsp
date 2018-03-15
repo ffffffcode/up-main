@@ -9,7 +9,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <title>文件列表</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div class="col-md-12">
             <h1>^-^文件列表Up</h1>
             <ol class="breadcrumb">
-                <li><a href="${requestContext.request.context}/">Up</a></li>
+                <li><a href="${requestContext.request.contextPath}/">Up</a></li>
                 <li class="active">文件列表</li>
             </ol>
         </div>
@@ -40,8 +41,8 @@
                 <tbody>
                 <c:forEach items="${HomeworkList}" var="homework">
                     <tr>
-                        <td>${homework.uper}</td>
-                        <td><a href="download?fileName=${homework.filename}">${homework.filename}</a></td>
+                        <td>${homework.get("uper")}</td>
+                        <td><a href="download?fileName=${homework.get("filename")}">${homework.get("filename")}</a></td>
                     </tr>
                 </c:forEach>
                 </tbody>
