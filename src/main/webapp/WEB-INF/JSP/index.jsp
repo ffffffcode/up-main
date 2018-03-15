@@ -9,7 +9,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <title>作业共享Up</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
             <h1>^-^作业共享Up</h1>
             <ol class="breadcrumb">
                 <li class="active">Up</li>
-                <li><a href="${requestContext.request.context}/list">文件列表</a></li>
+                <li><a href="${requestContext.request.contextPath}/list">文件列表</a></li>
             </ol>
         </div>
     </div>
@@ -53,4 +54,7 @@
     </div>
 </div>
 </body>
+<script>
+
+</script>
 </html>
