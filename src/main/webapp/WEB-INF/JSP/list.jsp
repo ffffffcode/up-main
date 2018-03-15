@@ -10,7 +10,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <title>文件列表</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
         <div class="col-md-12">
             <h1>^-^文件列表Up</h1>
             <ol class="breadcrumb">
-                <li><a href="${requestContext.request.contextPath}/">Up</a></li>
+                <li><a href="${pageContext.request.contextPath}/">Up</a></li>
                 <li class="active">文件列表</li>
             </ol>
         </div>
